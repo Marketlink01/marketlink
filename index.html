@@ -1,51 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketlink</title>
+    <title>Marketlink - Discord</title>
+
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
             font-family: Arial, sans-serif;
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
+            margin: 0;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            text-align: center;
         }
 
         h1 {
-            font-size: 32px;
             margin-bottom: 20px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-shadow: 0 0 10px #00aaff;
+            font-size: 28px;
+            letter-spacing: 1px;
         }
 
-        .widget-box {
-            padding: 15px;
+        iframe {
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 15px #00aaff66;
-            border: 1px solid #00aaff;
         }
     </style>
 </head>
 <body>
 
-    <h1>Marketlink</h1>
+    <div class="card">
+        <h1>🌐 Bem-vindo à Marketlink</h1>
 
-    <div class="widget-box">
-        <iframe
-            src="https://discord.com/widget?id=1434346055721287821&theme=dark"
-            width="350"
-            height="500"
-            allowtransparency="true"
-            frameborder="0">
+        <iframe 
+            src="https://discord.com/widget?id=1441821415589281852&theme=dark" 
+            width="350" 
+            height="500" 
+            allowtransparency="true" 
+            frameborder="0" 
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
         </iframe>
     </div>
 
