@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Discord Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketlink</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .widget-box {
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px #00aaff66;
+            border: 1px solid #00aaff;
+        }
+    </style>
 </head>
-<body style="background-color: #1e1e1e; display: flex; justify-content: center; align-items: center; height: 100vh;">
-    
-    <iframe
-        src="https://discord.com/widget?id=1434346055721287821&theme=dark"
-        width="350"
-        height="500"
-        allowtransparency="true"
-        frameborder="0">
-    </iframe>
+<body>
+
+    <h1>Marketlink</h1>
+
+    <div class="widget-box">
+        <iframe
+            src="https://discord.com/widget?id=1434346055721287821&theme=dark"
+            width="350"
+            height="500"
+            allowtransparency="true"
+            frameborder="0">
+        </iframe>
+    </div>
 
 </body>
 </html>
-
